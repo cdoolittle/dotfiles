@@ -4,8 +4,9 @@
 - [ ] Google Data Feed BLC
 - [ ] Affiliate links
 - [ ] XML allow $0 carts
-- [x] Reviews approve is broken
-
+- [ ] the address and orders security
 ## Shop iFit
 - [ ] shop.ifit needs to have reversal set up when order is declined
+## Reviews
+- [ ] need to fix the email list so we get the right contacts
 
