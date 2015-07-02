@@ -75,6 +75,7 @@ alias paste='pbpaste'
 alias bamboo='ssh root@bamboo.iconfitness.com'
 alias prdblc21='ssh root@prdblc21'
 alias prdblc22='ssh root@prdblc22'
+alias prdmysql1='ssh root@prdmysql1'
 alias sublime='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 #host update-hu
 alias hu='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /private/etc/hosts'
