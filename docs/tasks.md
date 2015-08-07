@@ -8,5 +8,5 @@
 ## Shop iFit
 - [ ] shop.ifit needs to have reversal set up when order is declined
 ## Reviews
-- [ ] need to fix the email list so we get the right contacts
+- [x] need to fix the email list so we get the right contacts
 
