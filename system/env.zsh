@@ -77,3 +77,6 @@ export SSL_CERT_FILE=
 
 #Java Version
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_25, x86_64`
+
+#Android Home
+export ANDROID_HOME=/sdk
