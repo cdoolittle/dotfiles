@@ -61,8 +61,7 @@ alias usejava7='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)'
 alias usejava8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
 
 #dev aliases
-alias prddb2='ssh root@prddb2'
-alias refresh='s ource ~/.zshrc'
+alias refresh='source ~/.zshrc'
 alias redis='redis-server /usr/local/etc/redis.conf'
 alias mysql='mysql.server start'
 alias solr='solr.sh'
@@ -85,6 +84,11 @@ alias bamboo='ssh root@bamboo.iconfitness.com'
 alias prdblc21='ssh root@prdblc21'
 alias prdblc22='ssh root@prdblc22'
 alias prdmysql1='ssh root@prdmysql1'
+alias blcadmin='ssh root@blcadmin'
+alias devblc01='ssh root@devblc01'
+alias qablc21='ssh root@qablc21'
+alias jarvis='ssh misweb@jarvis.iconfitness.com'
+alias prddb2='ssh root@prddb2'
 
 #host update-hu
 alias hu='edit /private/etc/hosts'
@@ -93,8 +97,7 @@ alias hu='edit /private/etc/hosts'
 alias s3qaprod='aws s3 sync s3://iconblcstage s3://iconblcproduction'
 alias s3prodqa='aws s3 sync s3://iconblcproduction s3://iconblcstage'
 alias s3qadev='aws s3 sync s3://iconblcstage s3://iconblcdev'
-alias devblc01='ssh root@devblc01'
+
 alias process='ps -ef | grep'
-alias qablc21='ssh root@qablc21'
+
 alias clearcache='sudo discoveryutil mdnsflushcache'
-alias jarvis='ssh misweb@jarvis.iconfitness.com'
