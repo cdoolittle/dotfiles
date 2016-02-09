@@ -31,7 +31,7 @@ alias t='edit ~/.dotfiles/docs/tasks.md'
 alias tu='git --git-dir=/Users/cdoolittle/.dotfiles/.git/ --work-tree=/Users/cdoolittle/.dotfiles commit -a -m "ToDo update"'
 
 # copies public ssh key to clipboard
-alias pubkey="more ~/.ssh/id_dsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
 #Shorter Git commands
 alias gist='git status'
@@ -101,3 +101,6 @@ alias s3qadev='aws s3 sync s3://iconblcstage s3://iconblcdev'
 alias process='ps -ef | grep'
 
 alias clearcache='sudo discoveryutil mdnsflushcache'
+
+alias s3prodhere='aws s3 sync s3://iconblcproduction .'
+alias s3hereprod='aws s3 sync . s3://iconblcproduction'
