@@ -89,6 +89,7 @@ alias devblc01='ssh root@devblc01'
 alias qablc21='ssh root@qablc21'
 alias jarvis='ssh misweb@jarvis.iconfitness.com'
 alias prddb2='ssh root@prddb2'
+alias nginxdev='ssh root@nginxdev.iconfitness.com'
 
 #host update-hu
 alias hu='edit /private/etc/hosts'
@@ -98,9 +99,10 @@ alias s3qaprod='aws s3 sync s3://iconblcstage s3://iconblcproduction'
 alias s3prodqa='aws s3 sync s3://iconblcproduction s3://iconblcstage'
 alias s3qadev='aws s3 sync s3://iconblcstage s3://iconblcdev'
 
-alias process='ps -ef | grep'
-
-alias clearcache='sudo discoveryutil mdnsflushcache'
-
 alias s3prodhere='aws s3 sync s3://iconblcproduction .'
 alias s3hereprod='aws s3 sync . s3://iconblcproduction'
+
+alias process='ps -ef | grep'
+
+alias clearcache='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flushed'
+alias dnsclear='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flushed'
