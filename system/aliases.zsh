@@ -36,6 +36,8 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pa
 #Shorter Git commands
 alias gist='git status'
 alias st='open -a SourceTree `pwd`'
+alias assume='git update-index --assume-unchanged'
+alias unassume='git update-index --no-assume-unchanged'
 
 #replace Git with Hub
 alias git='hub'
@@ -48,9 +50,12 @@ alias mi='mvn install -DskipTests -Pblc-development'
 alias localdocs='gollum-site serve --watch --working --port 8050'
 
 #ease tomcat starting, stopping, logging
-alias start='sh bin/startup.sh'
-alias stop='sh bin/shutdown.sh'
-alias log='tail -f logs/catalina.out'
+#alias start='sh bin/startup.sh'
+#alias stop='sh bin/shutdown.sh'
+#alias log='tail -f logs/catalina.out'
+alias start-site='site-start.sh'
+alias start-admin='admin-start.sh'
+alias build-all='build-all.sh'
 
 # Ansible, will use a hosts file
 #alias ansible='ansible -i hosts'
@@ -65,12 +70,9 @@ alias refresh='source ~/.zshrc'
 alias redis='redis-server /usr/local/etc/redis.conf'
 alias mysql='mysql.server start'
 alias solr='solr.sh'
-alias site-start='site-start.sh'
-alias admin-start='admin-start.sh'
-alias build-all='build-all.sh'
+
 alias reset-dock='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
-alias assume='git update-index --assume-unchanged'
-alias unassume='git update-index --no-assume-unchanged'
+
 
 #update for your .dotfiles
 alias upt='git --git-dir=/Users/cdoolittle/.dotfiles/.git --work-tree=/Users/cdoolittle/.dotfiles commit -a -m "Update task list"'
