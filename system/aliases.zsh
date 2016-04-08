@@ -54,7 +54,9 @@ alias localdocs='gollum-site serve --watch --working --port 8050'
 #alias stop='sh bin/shutdown.sh'
 #alias log='tail -f logs/catalina.out'
 alias start-site='site-start.sh'
+alias site-start='start-site'
 alias start-admin='admin-start.sh'
+alias admin-start='start-admin'
 alias build-all='build-all.sh'
 
 # Ansible, will use a hosts file
@@ -92,6 +94,7 @@ alias qablc21='ssh root@qablc21'
 alias jarvis='ssh misweb@jarvis.iconfitness.com'
 alias prddb2='ssh root@prddb2'
 alias nginxdev='ssh root@nginxdev.iconfitness.com'
+alias dockerdev='ssh root@dockerdev.iconfitness.com'
 
 #host update-hu
 alias hu='edit /private/etc/hosts'
@@ -108,3 +111,5 @@ alias process='ps -ef | grep'
 
 alias clearcache='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flushed'
 alias dnsclear='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flushed'
+
+alias load-clean-db='~/Documents/dev-loader/clean-db.sh'
