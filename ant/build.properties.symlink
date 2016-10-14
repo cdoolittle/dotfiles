@@ -7,6 +7,7 @@ maven.home=/usr/local/Cellar/maven/3.2.3/libexec
 # Alternatively, you can download the JRebel zip distribution https://zeroturnaround.com/software/jrebel/download/prev-releases/
 # and not worry about pointing it to the Eclipse plugin path
 jrebel.path=/Users/cdoolittle/jrebel/lib/libjrebel64.dylib
+xrebel.path=/Users/cdoolittle/xrebel/xrebel.jar
 
 runtime.environment=development
 

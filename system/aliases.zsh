@@ -54,11 +54,11 @@ alias localdocs='gollum-site serve --watch --working --port 8050'
 #alias stop='sh bin/shutdown.sh'
 #alias log='tail -f logs/catalina.out'
 alias start-site='site-start.sh'
-alias site-start='start-site'
+alias site='start-site'
 alias start-admin='admin-start.sh'
-alias admin-start='start-admin'
+alias admin='start-admin'
 alias build-all='build-all.sh'
-
+alias site-xrebel='xrebel-start.sh'
 # Ansible, will use a hosts file
 #alias ansible='ansible -i hosts'
 #alias playbook='ansible-playbook -i hosts'
@@ -70,8 +70,9 @@ alias usejava8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
 #dev aliases
 alias refresh='source ~/.zshrc'
 alias redis='redis-server /usr/local/etc/redis.conf'
-alias mysql='mysql.server start'
+alias start-mysql='mysql.server start'
 alias solr='solr.sh'
+alias solr-4='solr-4.sh'
 
 alias reset-dock='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
 
@@ -82,19 +83,6 @@ alias upt='git --git-dir=/Users/cdoolittle/.dotfiles/.git --work-tree=/Users/cdo
 # copy file content
 alias copy='pbcopy'
 alias paste='pbpaste'
-
-#SSH
-alias bamboo='ssh root@bamboo.iconfitness.com'
-alias prdblc21='ssh root@prdblc21'
-alias prdblc22='ssh root@prdblc22'
-alias prdmysql1='ssh root@prdmysql1'
-alias blcadmin='ssh root@blcadmin'
-alias devblc01='ssh root@devblc01'
-alias qablc21='ssh root@qablc21'
-alias jarvis='ssh misweb@jarvis.iconfitness.com'
-alias prddb2='ssh root@prddb2'
-alias nginxdev='ssh root@nginxdev.iconfitness.com'
-alias dockerdev='ssh root@dockerdev.iconfitness.com'
 
 #host update-hu
 alias hu='edit /private/etc/hosts'
@@ -107,9 +95,18 @@ alias s3qadev='aws s3 sync s3://iconblcstage s3://iconblcdev'
 alias s3prodhere='aws s3 sync s3://iconblcproduction .'
 alias s3hereprod='aws s3 sync . s3://iconblcproduction'
 
+alias s3stagehere='aws s3 sync s3://iconblcstage .'
+alias s3herestage='aws s3 sync . s3://iconblcstage'
+
 alias process='ps -ef | grep'
 
 alias clearcache='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flushed'
 alias dnsclear='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flushed'
 
-alias load-clean-db='~/Documents/dev-loader/clean-db.sh'
+alias dev-loader='~/Documents/dev-loader/clean-db.sh'
+alias start-server='Python -m SimpleHTTPServer '
+
+# SSH aliases
+alias qablc21='ssh cdoolittle@qablc21'
+
+alias whatismyip='curl http://dev70.iconfitness.com/CWSTest/ipAddress.jsp'

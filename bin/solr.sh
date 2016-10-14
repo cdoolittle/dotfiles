@@ -1,3 +1,8 @@
 #!/bin/sh
-cd /Users/cdoolittle/solr-4.10.3/example
-java -Dsolr.solr.home=icon -jar start.jar
+if [ $# -eq 0 ]
+  then
+    echo "Please supply the vagrant op"
+    exit 1
+fi
+cd /Users/cdoolittle/commerce/solr/cloud/
+vagrant $1

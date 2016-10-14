@@ -13,9 +13,9 @@ export MULE_HOME=/usr/lib/mule-standalone-3.1.2
 export GRAILS_HOME=/usr/lib/grails-2.0.0
 export MAGICK_HOME=/usr/lib/ImageMagick
 export NODE_PATH="/usr/local/lib/node"
-export GOPATH=$HOME/.go
+export GOPATH=/Users/cdoolittle/Documents/go-workspace
 export MANPATH="/opt/local/share/main:/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:$ZSH/bin:$ZSH/bin/private:/usr/local/bin:/usr/local/sbin:storm:/usr/local/Cellar/go/1.2.1/libexec/bin:/usr/local/mysql/bin:$PATH"
+export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:$ZSH/bin:$ZSH/bin/private:/usr/local/bin:/usr/local/sbin:storm:/usr/local/Cellar/go/1.2.1/libexec/bin:/usr/local/mysql/bin:/usr/local/go/bin:$PATH"
 
 # Environment settings
 setopt NO_BG_NICE # don't nice background tasks
