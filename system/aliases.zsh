@@ -92,8 +92,8 @@ alias s3qaprod='aws s3 sync s3://iconblcstage s3://iconblcproduction'
 alias s3prodqa='aws s3 sync s3://iconblcproduction s3://iconblcstage'
 alias s3qadev='aws s3 sync s3://iconblcstage s3://iconblcdev'
 
-alias s3prodhere='aws s3 sync s3://iconblcproduction .'
-alias s3hereprod='aws s3 sync . s3://iconblcproduction'
+alias s3prodhere='aws s3 sync s3://iconblcproduction ~/iconblcproduction'
+alias s3hereprod='aws s3 sync ~/iconblcproduction s3://iconblcproduction'
 
 alias s3stagehere='aws s3 sync s3://iconblcstage .'
 alias s3herestage='aws s3 sync . s3://iconblcstage'
@@ -103,10 +103,20 @@ alias process='ps -ef | grep'
 alias clearcache='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flushed'
 alias dnsclear='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flushed'
 
-alias dev-loader='~/Documents/dev-loader/clean-db.sh'
+alias dev-loader='~/Documents/dev-loader/clean-db.sh broadleaf'
 alias start-server='Python -m SimpleHTTPServer '
 
 # SSH aliases
 alias qablc21='ssh cdoolittle@qablc21'
+alias qaadmin='ssh root@blcadminqa'
+alias blcadmin='ssh root@blcadmin'
+alias prdblc21='ssh root@prdblc21'
+alias prdblc22='ssh root@prdblc22'
+alias prdmysql1='ssh root@prdmysql1'
+alias prddb2='ssh root@prddb2'
+alias dockerdev='ssh root@dockerdev'
 
 alias whatismyip='curl http://dev70.iconfitness.com/CWSTest/ipAddress.jsp'
+
+alias sleepnow='pmset sleepnow'
+alias aliases='edit ~/.dotfiles/system/aliases.zsh'
