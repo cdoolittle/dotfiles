@@ -1,5 +1,5 @@
 # Casey's dotfiles
-
+# Repo moved to bitbucket.org
 Initially copied from [phillipuniverse](https://github.com/phillipuniverse/dotfiles)
 
 ## Usage
